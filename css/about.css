@@ -1,0 +1,66 @@
+* {
+  margin: 0;
+  font-family: 'Karla', sans-serif;
+  text-decoration: none;
+}
+
+#logo {
+  width: 25%;
+}
+a {
+  margin-left: 3%;
+  width: 100%;
+}
+
+#menu {
+  display: flex;
+  justify-content: space-between;
+}
+
+#links {
+  margin: 3%;
+  display: flex;
+  justify-content: flex-end;
+}
+
+p {
+  margin-left: 5%;
+}
+
+#title {
+  font-family: 'Spartan', sans-serif;
+  font-size: 300%;
+  color: #ba68ed;
+  margin-left: 5%;
+}
+.bigger {
+  font-size: 200%;
+}
+
+#about-photo {
+  width: 300px;
+  height: 300px;
+  object-fit: cover;
+  margin-left: 5%;
+  /* border-radius: 100%; */
+}
+
+#about-container {
+  display: flex;
+  flex-direction: row;
+  margin-top: 3%;
+}
+
+#description {
+  margin-left: 3%;
+  margin-right: 40%;
+}
+
+.email {
+  color: #8be0fc;
+  margin-left: 0;
+}
+
+.email:hover {
+  text-decoration: underline;
+}

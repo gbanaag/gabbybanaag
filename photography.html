@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Photography </title>
+    <link rel="stylesheet" href="photography/photo.css">
+    <link href="https://fonts.googleapis.com/css?family=Karla|Spartan&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="links.css">
+    <link rel="icon" href="logo.PNG">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+  </head>
+  <body>
+    <div id="menu">
+      <a href="index.html"><img id="logo" src="logo.png"></a>
+      <div id="links">
+        <a href="code.html" id="code-link" class="links"> Code </a>
+        <a href="design.html" id="design-link" class="links"> Design </a>
+        <a href="photography.html" id="photo-link" class="links"> Photography </a>
+        <a href="film.html" id="film-link" class="links"> Film </a>
+        <a href="art.html" id="art-link" class="links"> Art </a>
+        <a href="music.html" id="music-link" class="links"> Music </a>
+        <a href="writing.html" id="writing-link" class="links"> Writing </a>
+        <a href="projects.html" id="projects-link" class="links"> Projects </a>
+        <a href="resume.html" id="resume-link" class="links"> Resume </a>
+        <a href="about.html" id="about-link" class="links"> About </a>
+      </div>
+    </div>
+
+    <h1 id="title"> in development </h1>
+    <p class="bigger"> photography portfolio </p>
+
+
+
+    <!-- slideshow -->
+
+
+    <div id="slideshow-container">
+      <button id="left" style="height:2px" onclick="plusDivs(-1)"> ← </button>
+      <!-- &#10094; -->
+
+      <img class="mySlides horizontal" src="photography/paris-view.JPG">
+      <img class="mySlides horizontal" src="photography/katelyn.jpg">
+      <img class="mySlides horizontal" src="photography/bean.jpg">
+      <img class="mySlides vertical" src="photography/evelyn.png">
+      <img class="mySlides horizontal" src="photography/ice-cream.jpg">
+      <img class="mySlides horizontal" src="photography/indopak.jpg">
+      <img class="mySlides vertical" src="photography/nyu.png">
+      <img class="mySlides horizontal" src="photography/osaka-chair.jpg">
+      <img class="mySlides horizontal" src="photography/paris-trees.jpg">
+      <img class="mySlides horizontal" src="photography/sedona.jpg">
+      <img class="mySlides vertical" src="photography/smithsonian.png">
+      <img class="mySlides horizontal" src="photography/snow.jpg">
+      <img class="mySlides horizontal" src="photography/talent-show.jpg">
+      <img class="mySlides horizontal" src="photography/track.jpg">
+      <img class="mySlides horizontal" src="photography/winter-formal.jpg">
+
+
+      <button id="right" style="height:2px" onclick="plusDivs(1)"> → </button>
+      <!-- &#10095; -->
+    </div>
+
+  <script>
+  var slideIndex = 1;
+  showDivs(slideIndex);
+
+  function plusDivs(n) {
+    showDivs(slideIndex += n);
+  }
+
+  function showDivs(n) {
+    var i;
+    var x = document.getElementsByClassName("mySlides");
+    if (n > x.length) {slideIndex = 1}
+    if (n < 1) {slideIndex = x.length}
+    for (i = 0; i < x.length; i++) {
+      // $(x[i]).fadeOut(1000);
+      x[i].style.display = "none";
+    }
+    x[slideIndex-1].style.display = "block";
+    // $(x[slideIndex-1]).delay(1000).fadeIn(1000);
+  }
+  </script>
+
+  </body>
+</html>

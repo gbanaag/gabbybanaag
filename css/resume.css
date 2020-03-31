@@ -1,0 +1,176 @@
+/* fonts:
+font-family: 'Spartan', sans-serif;
+font-family: 'Karla', sans-serif; */
+* {
+  margin: 0;
+  font-family: 'Karla', sans-serif;
+  text-decoration: none;
+}
+
+#logo {
+  width: 25%;
+}
+a {
+  margin-left: 3%;
+  width: 100%;
+}
+
+#menu {
+  display: flex;
+  justify-content: space-between;
+}
+
+#links {
+  margin: 3%;
+  display: flex;
+  justify-content: flex-end;
+}
+
+p {
+  margin-left: 5%;
+}
+
+#title {
+  font-family: 'Spartan', sans-serif;
+  font-size: 300%;
+  color: #ffed66;
+  margin-left: 5%;
+}
+.bigger {
+  font-size: 200%;
+}
+
+.project {
+  margin-left: 5%;
+  margin-right: 5%;
+  margin-bottom: 5%;
+  display: flex;
+  flex-direction: row;
+}
+
+.proj-image {
+  width: 250px;
+  margin: 3px;
+}
+
+#experience {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.experience {
+  font-size: 140%;
+}
+
+/* link hover effects from Stas Melnikov */
+
+/*
+* These styles creates the underlining of link
+*/
+
+.links{
+  margin: 5px;
+	position: relative;
+	z-index: 1;
+	display: inline-flex;
+  color: white;
+
+	padding-left: 10px;
+	padding-bottom: 5px;
+	padding-right: 10px;
+}
+
+.links::before{
+	content: "";
+	width: 100%;
+	height: 100%;
+  /* background-color: #fa4d9b; */
+
+	position: absolute;
+	left: 0;
+	bottom: 2px;
+	z-index: -1;
+
+	will-change: width;
+	transform: rotate(2deg);
+	transform-origin: left bottom
+}
+
+.links:hover::before{
+	width: 0;
+  text-decoration: underline;
+}
+
+/*
+* animation styles
+*/
+
+.links::before{
+	transition: width .1s ease-out;
+}
+
+.links:hover::before{
+	transition-duration: .15s;
+}
+
+.links:hover {
+  color: black;
+  text-decoration: underline;
+}
+/* end of link hover effects */
+
+
+/* TABS CSS  */
+* {box-sizing: border-box}
+
+/* Set height of body and the document to 100% */
+body, html {
+height: 100%;
+margin: 0;
+font-family: Arial;
+}
+
+/* Style tab links */
+.tablink {
+/* background-color: #555;
+color: white; */
+float: left;
+border: none;
+outline: none;
+cursor: pointer;
+padding: 14px 16px;
+font-size: 120%;
+width: 25%;
+/* margin-left: 5%;
+margin-right: 5%; */
+}
+
+.tablink:hover {
+/* background-color: #777; */
+background-color: #ffed66;
+}
+
+/* Style the tab content (and add height:100% for full page content) */
+.tabcontent {
+color: black;
+background-color: #f5f5f5;
+display: none;
+padding: 100px 20px;
+height: 100%;
+}
+
+/* #code { background-color: #86c9fc} */
+
+
+
+/* END OF TABS CSS  */
+
+#resume {
+  margin-left: 5%;
+  margin-right: 5%;
+}
+
+#line {
+  background-color: orange;
+  height: 2px;
+}

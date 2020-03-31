@@ -1,0 +1,110 @@
+/* link hover effects from Stas Melnikov */
+
+/*
+* These styles creates the underlining of link
+*/
+
+.links{
+  margin: 5px;
+	position: relative;
+	z-index: 1;
+	display: inline-flex;
+  color: white;
+
+	padding-left: 10px;
+	padding-bottom: 5px;
+	padding-right: 10px;
+}
+
+.links::before{
+	content: "";
+	width: 100%;
+	height: 100%;
+  /* background-color: #fa4d9b; */
+
+	position: absolute;
+	left: 0;
+	bottom: 2px;
+	z-index: -1;
+
+	will-change: width;
+	transform: rotate(0deg);
+	transform-origin: left bottom
+}
+
+.links:hover::before{
+	width: 0;
+}
+
+/*
+* animation styles
+*/
+
+.links::before{
+	transition: width .1s ease-out;
+}
+
+.links:hover::before{
+	transition-duration: .15s;
+}
+
+.links:hover {
+  color: black;
+  text-decoration: none;
+}
+/* end of link hover effects */
+
+
+
+
+/* link colors */
+
+#code-link::before {
+  background-color: #86c9fc;
+  /* blue */
+}
+
+#design-link::before {
+  background-color: #bd8bf0;
+  /* purple */
+}
+
+#photo-link::before {
+  background-color: #8be0fc;
+  /* happier blue */
+}
+
+#film-link::before {
+  background-color: #4dfac3;
+  /* aqua */
+}
+
+#art-link::before {
+  background-color: #fab84d;
+  /* orange */
+}
+
+#music-link::before {
+  background-color: #fa4d9b;
+  /* pink */
+}
+
+#writing-link::before {
+  background-color: #f52a2a;
+  /* red */
+}
+
+#projects-link::before {
+  background-color: #89ed6f;
+  /* green */
+}
+
+#resume-link::before {
+  background-color: #ffed66;
+  /* yellow */
+}
+
+#about-link::before {
+  background-color: #ba68ed;
+  /* brighter purple */
+}
