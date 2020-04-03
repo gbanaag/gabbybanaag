@@ -15,6 +15,15 @@ a {
   width: 100%;
 }
 
+.project-link {
+  color: #8be0fc;
+  margin-left: 0;
+}
+
+.project-link:hover {
+  text-decoration: underline;
+}
+
 #menu {
   display: flex;
   justify-content: space-between;
