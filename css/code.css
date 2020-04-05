@@ -11,8 +11,12 @@ font-family: 'Karla', sans-serif; */
   width: 25%;
 }
 a {
-  margin-left: 3%;
-  width: 100%;
+
+}
+
+#logo {
+  margin-left: 5%;
+  width: 100px;
 }
 
 .project-link {
@@ -58,8 +62,9 @@ p {
 }
 
 .proj-image {
-  width: 250px;
-  height: 250px;
+  width: 20%;
+  height: 20%;
+  /* height: 250px; */
   margin: 3px;
 }
 

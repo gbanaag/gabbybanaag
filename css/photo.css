@@ -63,9 +63,9 @@ img {
 }
 
 .mySlides {
-  width: 1000px;
-  height: 700px;
-  /* width: 75%; */
+  /* width: 1000px;
+  height: 700px; */
+  width: 90%;
   image-orientation: from-image;
 }
 
